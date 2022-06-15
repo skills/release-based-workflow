@@ -1,176 +1,293 @@
-<!--
-  <<< Author notes: Header of the course >>>
-  Include a 1280×640 image, course name in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Next to "About", add description & tags; disable releases, packages, & environments.
-  Add your open source license, GitHub uses Creative Commons Attribution 4.0 International.
--->
 
-<img src=TBD-social-image width=300 align=right>
+<!--Step 0-->
+<img src="https://repository-images.githubusercontent.com/155359349/f0a13e00-586d-11ea-8d2c-40a17f4ee083" width=300 align=right>
 
-# TBD-course-name
+# Create a release based workflow
 
-_TBD-course-description_
+_In this course, you'll learn how to create a release-based workflow that is built on the foundations of the [GitHub flow](https://guides.github.com/introduction/flow/)._
 
-<!--
-  <<< Author notes: Start of the course >>>
-  Include start button, a note about Actions minutes,
-  and tell the learner why they should take the course.
-  Each step should be wrapped in <details>/<summary>, with an `id` set.
-  The start <details> should have `open` as well.
-  Do not use quotes on the <details> tag attributes.
--->
+When your team uses a release-based workflow, GitHub makes it easy to collaborate with deployable iterations of your project that you can package and make available for a wider audience to download and use.
 
-<details id=0 open>
-<summary><strong>:golf: Start</strong></summary>
+GitHub releases allow your team to package and provide software to your users based on a specific point in the history of your project.
 
-**To start this course: [<img width="150" alt="Use this template" src="https://user-images.githubusercontent.com/1221423/148581131-555c0fb8-5361-4450-a760-75fa6219a2fc.png">](https://github.com/TBD-organization/TBD-repository-name/generate)**
+- **Who is this for**: Developers, DevOps Engineers, IT Operations, managers, teams.
+- **What you'll learn**: How to follow a release-based workflow.
+- **What you'll build**: You will create tags, releases, and release notes.
+- **Prerequisites**: If you need to learn about branches, commits, and pull requests, take [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github) first.
+- **How long**: This course is 7 steps long and takes less than 1 hour to complete.
 
-> We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).<br>
-> After you make your own repository, wait about 20 seconds and refresh. I will go to the next step.
+## How to start this course
 
-TBD-welcome-paragraph
+1. Above these instructions, right-click **Use this template** and open the link in a new tab.
+   ![Use this template](https://user-images.githubusercontent.com/1221423/169618716-fb17528d-f332-4fc5-a11a-eaa23562665e.png)
+2. In the new tab, follow the prompts to create a new repository.
+   - For owner, choose your personal account or an organization to host the repository.
+   - We recommend creating a public repository-private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+   ![Create a new repository](https://user-images.githubusercontent.com/1221423/169618722-406dc508-add4-4074-83f0-c7a7ad87f6f3.png)
+3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
-- **Who is this for**: TBD-audience.
-- **What you'll learn**: TBD-objective.
-- **What you'll build**: TBD-result.
-- **Prerequisites**: TBD-prerequisites.
-- **How long**: This course is TBD-step-count steps long and takes less than TBD-duration to complete.
+<!--endstep0-->
 
-</details>
-
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
-  TBD-step-1-notes.
--->
-
+<!--Step 1-->
 <details id=1>
-<summary><strong>:TBD-step-1-emoji: Step 1: TBD-step-1-name</strong></summary>
+<summary><h2>Step 1: Create a beta release</h2></summary>
 
-### Welcome to "TBD-course-name"! :wave:
+### Welcome to "Create a release based workflow"! :wave:
 
-TBD-step-1-information
+### The GitHub flow
 
-**What is _TBD-term-1_**: TBD-definition-1
+![github-flow](https://user-images.githubusercontent.com/6351798/48032310-63842400-e114-11e8-8db0-06dc0504dcb5.png)
 
-### :keyboard: Activity: TBD-step-1-name
+The [GitHub flow](https://guides.github.com/introduction/flow/) is a lightweight, branch-based workflow for projects with regular deployments.
+
+Some projects may deploy more often, with continuous deployment. There might be a "release" every time there's a new commit on main.
+
+But, some projects rely on a different structure for versions and releases.
+
+### Versions
+
+Versions are different iterations of updated software like operating systems, apps, or dependencies. Common examples are "Windows 8.1" to "Windows 10", or "macOS High Sierra" to "macOS Mojave".
+
+Developers update code, and then run tests on the project for bugs. During that time, the developers might set up certain securities to protect from new code or bugs. Then, the tested code is ready for production. Teams version the code and release it for installation by end users.
+
+### :keyboard: Activity: Create a release for the current codebase
+In this step, you will create a release for this repository on GitHub.
+
+GitHub Releases point to a specific commit. Releases can include release notes in Markdown, and attached binaries.
+
+Before using a release based workflow for a larger release, let's create a tag and a release.
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. TBD-step-1-instructions.
+1. Go to the **Releases** page for this repository.
+    - You can click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click **0 releases**.
+1. Click **Create a new release**.
+1. In the field for _Tag version_, specify a number. In this case, use **v0.9**. Keep the _Target_ as **main**.
+1. Give the release a title, like "First beta release". If you'd like, you could also give the release a short description.
+1. Select the checkbox next to **This is a pre-release**, since it is representing a beta version.
+1. Click **Publish release**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
 
-<!--
-  <<< Author notes: Step 2 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  TBD-step-2-notes.
--->
-
+<!--Step 2-->
 <details id=2>
-<summary><strong>:TBD-step-2-emoji: Step 2: TBD-step-2-name</strong></summary>
+<summary><h2>Step 2: Add a new feature to the release branch</h2></summary>
 
-### You did TBD-step-1-name! :tada:
+### You created a beta release! :tada:
 
-TBD-step-2-information
+### Release management
 
-**What is _TBD-term-2_**: TBD-definition-2
+As you prepare for a future release, you'll need to organize more than the tasks and features. It's important to create a clear workflow for your team, and to make sure that the work remains organized.
 
-### :keyboard: Activity: TBD-step-2-name
+There are several strategies for managing releases. Some teams might use long-lived branches, like `production`, `dev`, and `main`. Some teams use simple feature branches, releasing from the main branch.
 
-1. TBD-step-2-instructions.
+No one strategy is better than another. We always recommend being intentional about branches and reducing long-lived branches whenever possible.
+
+In this exercise, you'll use the `release-v1.0` branch to be your one long-lived branch per release version.
+
+### Protected branches
+
+Like the `main` branch, you can protect release branches. This means you can protect branches from force pushes or accidental deletion. This is already configured in this repository.
+
+### Add a feature
+
+Releases are usually made of many smaller changes. Since we don't know of any bugs, we'll focus on a few features to update on our game before the version update.
+
+- You should update the page background color to black
+- I'll help you change the text colors to green
+
+### :keyboard: Activity: Update `base.css`
+
+1. Create a new branch and change the `body` CSS declaration in `base.css` to match what is below. This will set the page background to black.
+  ```
+  body {
+  	background-color: black;
+  }
+  ```
+1. Open a pull request with `release-v1.0` as the `base` branch, and your new branch as `compare`.
+1. Fill in the pull request template to describe your changes.
+
+### Merge the new feature to the release branch
+Even with releases, the GitHub flow is still an important strategy for working with your team. It's a good idea to use short-lived branches for quick feature additions and bug fixes.
+
+Merge this feature pull request so that you can open the release pull request as early as possible.
+
+### :keyboard: Activity: Merge the pull request
+
+1. Click **Merge pull request**, and delete your branch.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
 
-<!--
-  <<< Author notes: Step 3 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  TBD-step-3-notes.
--->
 
+<!--Step 3-->
 <details id=3>
-<summary><strong>:TBD-step-3-emoji: Step 3: TBD-step-3-name</strong></summary>
+<summary><h2>Step 3: Open a release pull request</h2></summary>
 
-### Nice work finishing TBD-step-2-name :sparkles:
+### Nice work adding a new feature to the release branch :sparkles:
 
-TBD-step-3-information
+### Release branches and `main`
 
-**What is _TBD-term-3_**: TBD-definition-3
+You should open a pull request between your release branch and main as early as possible. It might be open for a long time, and that's okay.  The pull request corresponds to the work in the project board.
 
-### :keyboard: Activity: TBD-step-3-name
+The pull request description should:
+- Include a brief description of the pull request
+- Include a task list of expected features
+- Propose a ship date
 
-1. TBD-step-3-instructions.
+To expedite the creation of this pull request, I've added a pull request template to the repository. Now when you create a pull request, default text will automatically be displayed, this should help you identify and fill out all the necessary information. If you don't want to use the template content, just remove the text from the pull request and repace it with your pull request message.
+
+
+### :keyboard: Activity: Open a release pull request
+Let's make a new pull request comparing the `release-v1.0` branch to the `main` branch.
+
+1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
+1. Open a **new pull request** with `base: main` and `compare: release-v1.0`.
+1. Ensure the title of your pull request is **Release v1.0**
+1. Include a detailed pull request body.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
 
-<!--
-  <<< Author notes: Step 4 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  TBD-step-4-notes.
--->
-
+<!--Step 4-->
 <details id=4>
-<summary><strong>:TBD-step-4-emoji: Step 4: TBD-step-4-name</strong></summary>
+<summary><h2>Step 4: Automate release notes</h2></summary>
 
-### Nicely done TBD-step-3-name! :partying_face:
+### Nicely done opening a release pull request :partying_face:
 
-TBD-step-4-information
+### Automatically generated release notes
+[Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes) provide an automated alternative to manually writing release notes for your GitHub releases. With automatically generated release notes, you can quickly generate an overview of the contents of a release. Automatically generated release notes include a list of merged pull requests, a list of contributors to the release, and a link to a full changelog. You can also customize your release notes once they are generated.
 
-**What is _TBD-term-4_**: TBD-definition-4
+### :keyboard: Activity: Generate automatic release notes
 
-### :keyboard: Activity: TBD-step-4-name
-
-1. TBD-step-4-instructions.
+1. In a separate tab, go to the **Releases** page for this repository.
+    - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link
+1. Click the **Edit** button next to your draft release.
+1. To the top right of the description text box, click **Generate release notes**.
+1. Click **Save draft**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
 
-<!--
-  <<< Author notes: Step 5 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  TBD-step-5-notes.
--->
-
+<!--Step 5-->
 <details id=5>
-<summary><strong>:shipit: Step 5: Merge your pull request</strong></summary>
+<summary><h2>Step 5: Merge and finalize the release branch</h2></summary>
 
-### Almost there TBD-step-4-name! :heart:
+### Almost there :heart:
 
 You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
 
-### :keyboard: Activity: Merge your pull request
+### :keyboard: Activity: Merge into main
 
 1. Click **Merge pull request**.
-1. Delete the branch `TBD-branch-name` (optional).
+
+### Finalizing releases
+
+It's important to be aware of the information what will be visible in that release. In the pre-release, the version and commit messages are visible.
+
+![image](https://user-images.githubusercontent.com/13326548/47883578-bdba7780-ddea-11e8-84b8-563e12f02ca6.png)
+
+### Semantic versioning
+
+Semantic versioning is a formal convention for specifying compatibility. It uses a three-part version number: **major version**; **minor version**; and **patch**.  Version numbers  convey meaning about the underlying code and what has been modified. For example, versioning could be handled as follows:
+
+| Code status  | Stage  | Rule  | Example version  |
+|---|---|---|---|
+| First release  | New product  | Start with 1.0.0  | 1.0.0  |
+| Backward compatible fix  | Patch release  | Increment the third digit  | 1.0.1  |
+| Backward compatible new feature  | Minor release  | Increment the middle digit and reset the last digit to zero  | 1.1.0  |
+| Breaking updates | Major release | Increment the first digit and reset the middle and last digits to zero | 2.0.0 |
+
+Check out this article on [Semantic versioning](https://semver.org/) to learn more.
+
+### Finalize the release
+
+Let's now change our recently automated release from _draft_ to _latest release_.
+
+### :keyboard: Activity: Finalize release
+
+1. In a separate tab, go to the **Releases** page for this repository.
+    - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link
+1. Click the **Edit** button next to your draft release.
+1. Using semantic versioning, then type `v1.0.0` as your release title.
+1. Include a description of the changes made in this branch.
+1. Click **Publish release**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
 
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
+<!--Step 6-->
+<details id=6>
+<summary><h2>Step 6: Commit a hotfix to the release</h2></summary>
 
-<details id=X>
-<summary><strong>:checkered_flag: Finish</strong></summary>
+### Thanks for the merge :tada:
 
-### Congratulations friend, you've completed this course!
+Notice that I didn't delete the branch? That's intentional.
 
-<img src=TBD-celebrate-image alt=celebrate width=300 align=right>
+Sometimes mistakes can happen with releases, and we'll want to be able to correct them on the same branch.
+
+Now that your release is finalized, we have a confession to make... somewhere in our recent update, I made a mistake and introduced a bug. Instead of changing the text colors to green, we changed the whole game background.
+
+_Sometimes GitHub Pages takes a few minutes to update. Your page might not immediately show the recent updates you've made._
+
+![image](https://user-images.githubusercontent.com/13326548/48045461-487dd800-e145-11e8-843c-b91a82213eb8.png)
+
+"Hotfixes", or a quick fix to address a bug in software, are a normal part of development. Oftentimes you'll see application updates whose only description is "bug fixes".
+
+When bugs come up after you release a version, you'll need to address them.
+
+We've already created this branch, pull request, and suggested a fix. The suggested change will be merged into the main branch. Later we will `cherry-pick` the hotfix commits into the release branch.
+
+Submit a hotfix by applying the suggested change and approving the PR.
+
+### :keyboard: Activity: Apply the suggestion
+1. In a separate tab, go to the **Pull requests** page and view the open pull request.
+1. Click **Commit suggestion**
+1. Enter a commit message
+1. Click **Commit changes**
+1. Approve the pull request
+1. Wait about 20 seconds then refresh this page for the next step.
+
+</details>
+
+<!--Step 7-->
+<details id=7>
+<summary><h2>Step 7: Create release v1.0.1</h2></summary>
+
+### A final release
+
+You updated the source code, but users can't readily access your most recent changes. Prepare a new release, and distribute that release to the necessary channels.
+
+### Create release v1.0.1
+
+With automation, you don't have to spend a lot of time working on your release draft. Follow the same steps we took before, and you'll find a new release drafted and ready for your approval.
+
+### :keyboard: Activity: Complete release
+
+1. In a separate tab, go to to the **Releases** page for this repository.
+    - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link.
+1. Click the **Edit** button next to your draft release.
+1.Practice your semantic version syntax. What should this version be labeled?
+1. Click **Publish release**.
+1. Wait about 20 seconds then refresh this page for the next step.
+
+</details>
+
+
+<details id=8>
+<summary><h2>Finish</h2></summary>
+
+### Congratulations friend, you've completed this course! :tada:
 
 Here's a recap of all the tasks you've accomplished in your repository:
 
-- TBD-recap.
+- Create a beta release
+- Add a new feature to the release branche
+- Open a release pull request
+- Automate release notes
+- Merge and finalize the release branch
+- Commit a hotfix to the release
+- Create release v1.0.1
 
 ### What's next?
 
@@ -181,11 +298,6 @@ Here's a recap of all the tasks you've accomplished in your repository:
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
 </details>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
 
 ---
 
