@@ -255,7 +255,7 @@ We've already created this branch and pull request. The suggested change will be
 
 Submit a hotfix by approving and merging the pull request.
 
-### :keyboard: Activity: Apply the suggestion
+### :keyboard: Activity: Merge the hotfix
 1. In a separate tab, go to the **Pull requests** page and view the open pull request.
 1. Review the changes and approve the pull request.
 1. Click **Merge pull request**.

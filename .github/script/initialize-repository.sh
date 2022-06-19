@@ -21,8 +21,8 @@ FEATURE_BRANCH=update-text-colors
 git checkout -b $FEATURE_BRANCH
 
 echo "Make changes to files"
-cp .github/changes/engine.js .
-cp .github/changes/game-with-bug.js .
+cp .github/changes/engine.js engine.js
+cp .github/changes/game-with-bug.js game.js
 
 echo "Commit file changes"
 git add engine.js game.js
