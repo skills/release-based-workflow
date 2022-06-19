@@ -65,7 +65,7 @@ Before using a release based workflow for a larger release, let's create a tag a
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
 1. Go to the **Releases** page for this repository.
     - You can click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click **0 releases**.
-1. Click **Draft a new release**.
+1. Click **Create a new release**.
 1. In the field for _Tag version_, specify a number. In this case, use **v0.9**. Keep the _Target_ as **main**.
 1. Give the release a title, like "First beta release". If you'd like, you could also give the release a short description.
 1. Select the checkbox next to **This is a pre-release**, since it is representing a beta version.

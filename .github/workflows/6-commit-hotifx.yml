@@ -17,7 +17,6 @@ on:
 # Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   on_hotfix_merged:

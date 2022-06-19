@@ -10,11 +10,11 @@ on:
   workflow_dispatch:
   release:
     types: [published]
-    tags: [v1.0.0]
 
 # Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   on_release_published:
@@ -22,9 +22,11 @@ jobs:
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
+    # 1. The tag for the published release is v1.0.0
     # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
-    if: ${{ !github.event.repository.is_template }}
+    if: ${{ !github.event.repository.is_template 
+      && github.ref_name == 'v1.0.0' }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows
     runs-on: ubuntu-latest
