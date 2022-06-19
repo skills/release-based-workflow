@@ -1,0 +1,55 @@
+name: Check step 1, Commit hotfix
+
+# This step triggers after 5-finalize-release.yml
+# This step sets STEP to 7
+# This step closes <details id=6> and opens <details id=7>
+
+# This will run when a pull request to main is closed (merged)
+# Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
+on:
+  workflow_dispatch:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+# Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  on_hotfix_merged:
+    name: On hotfix-v1.0.1 merged
+
+    # We will only run this action when:
+    # 1. This repository isn't the template repository
+    # 2. The pull request was closed through a merge
+    # 3. The pull request head branch is hotfix-v1.0.1
+    # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
+    # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
+    if: ${{ !github.event.repository.is_template 
+        && github.event.pull_request.merged == true
+        && github.head_ref == 'hotfix-v1.0.1'}}
+
+    # We'll run Ubuntu for performance instead of Mac or Windows
+    runs-on: ubuntu-latest
+
+    steps:
+      # We'll need to check out the repository so that we can edit the README
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      # Update README to close <details id=6>
+      # and open <details id=7>
+      # and set STEP to '7'
+      - name: Update to step 7
+        uses: skills/action-update-step@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          from_step: 6
+          to_step: 7
+  

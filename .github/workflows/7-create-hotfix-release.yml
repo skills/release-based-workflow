@@ -1,0 +1,48 @@
+name: Check step 1, Create a beta release
+
+# This step triggers after 4-release-notes-and-merge.yml
+# This step sets STEP to 6
+# This step closes <details id=1> and opens <details id=2>
+
+# This will run when a release with tag v0.9 is published
+# Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+    tags: [v1.0.1]
+
+# Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
+permissions:
+  contents: write
+
+jobs:
+  on_hotfix_release_published:
+    name: On hotfix release v1.0.1 published
+
+    # We will only run this action when:
+    # 1. This repository isn't the template repository
+    # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
+    # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
+    if: ${{ !github.event.repository.is_template }}
+
+    # We'll run Ubuntu for performance instead of Mac or Windows
+    runs-on: ubuntu-latest
+
+    steps:
+      # We'll need to check out the repository so that we can edit the README
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      # Update README to close <details id=7>
+      # and open <details id=x>
+      # and set STEP to 'x'
+      - name: Update to finish
+        uses: skills/action-update-step@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          from_step: 7
+          to_step: x
+  

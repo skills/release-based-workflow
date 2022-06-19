@@ -1,30 +1,30 @@
-name: Step 1, TBD-step-1-name
+name: Check step 1, Create a beta release
 
-# This step triggers after TBD-step-1-event-desc
+# This step triggers after 0-start.yml
 # This step sets STEP to 2
 # This step closes <details id=1> and opens <details id=2>
 
-# This will run every time we TBD-step-1-event-desc
+# This will run when a release with tag v0.9 is published
 # Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
-  TBD-step-1-event:
+  release:
+    types: [published]
+    tags: [v0.9]
 
+# Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
-  # Need `contents: read` to checkout the repository
-  # Need `contents: write` to update the step metadata
   contents: write
 
 jobs:
-  on_TBD-step-1-event:
-    name: On TBD-step-1-event
+  on_beta_release_created:
+    name: On beta release created
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
-    # 2. The STEP is currently 1 (see update-step.sh)
     # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
-    if: ${{ github.repository_owner != 'TBD-organization' }}
+    if: ${{ !github.event.repository.is_template }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows
     runs-on: ubuntu-latest
@@ -34,17 +34,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0 # Let's get all the branches
-
-      # TBD-step-1-additional-steps
+          fetch-depth: 0
 
       # Update README to close <details id=1>
       # and open <details id=2>
       # and set STEP to '2'
       - name: Update to step 2
-        run: ./.github/script/update-step.sh
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FROM_STEP: 1
-          TO_STEP: 2
-          BRANCH_NAME: TBD-branch-name
+        uses: skills/action-update-step@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          from_step: 1
+          to_step: 2
+  

@@ -1,11 +1,17 @@
 
-<!--Step 0-->
+<!--
+    The step and endstep markers will cause this 
+    introduction content to be hidden once the 
+    repository is created off the template
+-->
+
 <img src="https://repository-images.githubusercontent.com/155359349/f0a13e00-586d-11ea-8d2c-40a17f4ee083" width=300 align=right>
 
 # Create a release based workflow
 
-_In this course, you'll learn how to create a release-based workflow that is built on the foundations of the [GitHub flow](https://guides.github.com/introduction/flow/)._
+_Create a release-based workflow that is built on the foundations of the [GitHub flow](https://guides.github.com/introduction/flow/)._
 
+<!--step0-->
 When your team uses a release-based workflow, GitHub makes it easy to collaborate with deployable iterations of your project that you can package and make available for a wider audience to download and use.
 
 GitHub releases allow your team to package and provide software to your users based on a specific point in the history of your project.
@@ -25,14 +31,13 @@ GitHub releases allow your team to package and provide software to your users ba
    - We recommend creating a public repository-private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
    ![Create a new repository](https://user-images.githubusercontent.com/1221423/169618722-406dc508-add4-4074-83f0-c7a7ad87f6f3.png)
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
-
 <!--endstep0-->
 
 <!--Step 1-->
 <details id=1>
 <summary><h2>Step 1: Create a beta release</h2></summary>
 
-### Welcome to "Create a release based workflow"! :wave:
+_Welcome to "Create a release based workflow"! :wave:_
 
 ### The GitHub flow
 
@@ -69,11 +74,12 @@ Before using a release based workflow for a larger release, let's create a tag a
 
 </details>
 
+
 <!--Step 2-->
 <details id=2>
 <summary><h2>Step 2: Add a new feature to the release branch</h2></summary>
 
-### You created a beta release! :tada:
+_You created a beta release! :tada:_
 
 ### Release management
 
@@ -99,11 +105,11 @@ Releases are usually made of many smaller changes. Since we don't know of any bu
 ### :keyboard: Activity: Update `base.css`
 
 1. Create a new branch and change the `body` CSS declaration in `base.css` to match what is below. This will set the page background to black.
-  ```
-  body {
-  	background-color: black;
-  }
-  ```
+    ```
+    body {
+        background-color: black;
+    }
+    ```
 1. Open a pull request with `release-v1.0` as the `base` branch, and your new branch as `compare`.
 1. Fill in the pull request template to describe your changes.
 
@@ -124,18 +130,18 @@ Merge this feature pull request so that you can open the release pull request as
 <details id=3>
 <summary><h2>Step 3: Open a release pull request</h2></summary>
 
-### Nice work adding a new feature to the release branch :sparkles:
+_Nice work adding a new feature to the release branch :sparkles:_
 
 ### Release branches and `main`
 
-You should open a pull request between your release branch and main as early as possible. It might be open for a long time, and that's okay.  The pull request corresponds to the work in the project board.
+You should open a pull request between your release branch and main as early as possible. It might be open for a long time, and that's okay.
 
-The pull request description should:
-- Include a brief description of the pull request
-- Include a task list of expected features
-- Propose a ship date
+In general, the pull request description could include:
+- A [reference to an issue](https://docs.github.com/en/articles/basic-writing-and-formatting-syntax/#mentioning-people-and-teams) that the pull request addresses.
+- A description of the changes proposed in the pull request.
+- [@mentions](https://docs.github.com/en/articles/basic-writing-and-formatting-syntax/#mentioning-people-and-teams) of the person or team responsible for reviewing proposed changes.
 
-To expedite the creation of this pull request, I've added a pull request template to the repository. Now when you create a pull request, default text will automatically be displayed, this should help you identify and fill out all the necessary information. If you don't want to use the template content, just remove the text from the pull request and repace it with your pull request message.
+To expedite the creation of this pull request, I've added a pull request template to the repository. When you create a pull request, default text will automatically be displayed, this should help you identify and fill out all the necessary information. If you don't want to use the template content, just remove the text from the pull request and repace it with your pull request message.
 
 
 ### :keyboard: Activity: Open a release pull request
@@ -149,37 +155,45 @@ Let's make a new pull request comparing the `release-v1.0` branch to the `main` 
 
 </details>
 
+
 <!--Step 4-->
 <details id=4>
-<summary><h2>Step 4: Automate release notes</h2></summary>
+<summary><h2>Step 4: Generate release notes and merge</h2></summary>
 
-### Nicely done opening a release pull request :partying_face:
+_Nicely done opening a release pull request :partying_face:_
 
 ### Automatically generated release notes
 [Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes) provide an automated alternative to manually writing release notes for your GitHub releases. With automatically generated release notes, you can quickly generate an overview of the contents of a release. Automatically generated release notes include a list of merged pull requests, a list of contributors to the release, and a link to a full changelog. You can also customize your release notes once they are generated.
 
-### :keyboard: Activity: Generate automatic release notes
+### :keyboard: Activity: Generate release notes
 
 1. In a separate tab, go to the **Releases** page for this repository.
     - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link
-1. Click the **Edit** button next to your draft release.
+1. Click the **New Release** button.
+1. To the right of the tag dropdown, click the _Target_ dropddown and select the `release-v1.0` branch. 
+    - This is temporary in order to generate release notes based on the changes in this branch.
 1. To the top right of the description text box, click **Generate release notes**.
+1. Review the release notes in the text box and customize the content if desired.
+1. Set the _Target_ branch back to the `main`, as this is the branch you want to create your tag on once the release branch is merged.
 1. Click **Save draft**.
-1. Wait about 20 seconds then refresh this page for the next step.
-
-</details>
-
-<!--Step 5-->
-<details id=5>
-<summary><h2>Step 5: Merge and finalize the release branch</h2></summary>
-
-### Almost there :heart:
 
 You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
 
 ### :keyboard: Activity: Merge into main
 
+1. In a separate tab, go to the **Pull requests** page for this repository.
+1. Open your **Release v1.0** pull request
 1. Click **Merge pull request**.
+1. Wait about 20 seconds then refresh this page for the next step.
+
+</details>
+
+
+<!--Step 5-->
+<details id=5>
+<summary><h2>Step 5: Finalize the release</h2></summary>
+
+_Almost there :heart:_
 
 ### Finalizing releases
 
@@ -209,12 +223,13 @@ Let's now change our recently automated release from _draft_ to _latest release_
 1. In a separate tab, go to the **Releases** page for this repository.
     - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link
 1. Click the **Edit** button next to your draft release.
+1. In the field for _Tag version_, specify `v1.0.0`
 1. Using semantic versioning, then type `v1.0.0` as your release title.
-1. Include a description of the changes made in this branch.
 1. Click **Publish release**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
+
 
 <!--Step 6-->
 <details id=6>
@@ -236,19 +251,18 @@ _Sometimes GitHub Pages takes a few minutes to update. Your page might not immed
 
 When bugs come up after you release a version, you'll need to address them.
 
-We've already created this branch, pull request, and suggested a fix. The suggested change will be merged into the main branch. Later we will `cherry-pick` the hotfix commits into the release branch.
+We've already created this branch and pull request. The suggested change will be merged into the main branch. Later we will `cherry-pick` the hotfix commits into the release branch.
 
-Submit a hotfix by applying the suggested change and approving the PR.
+Submit a hotfix by approving and merging the pull request.
 
 ### :keyboard: Activity: Apply the suggestion
 1. In a separate tab, go to the **Pull requests** page and view the open pull request.
-1. Click **Commit suggestion**
-1. Enter a commit message
-1. Click **Commit changes**
-1. Approve the pull request
+1. Review the changes and approve the pull request.
+1. Click **Merge pull request**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
+
 
 <!--Step 7-->
 <details id=7>
@@ -260,21 +274,24 @@ You updated the source code, but users can't readily access your most recent cha
 
 ### Create release v1.0.1
 
-With automation, you don't have to spend a lot of time working on your release draft. Follow the same steps we took before, and you'll find a new release drafted and ready for your approval.
+With descriptive pull requests and auto generated release notes, you don't have to spend a lot of time working on your release draft. Follow the steps below to create your new release, generate the release notes, and publish.
 
 ### :keyboard: Activity: Complete release
 
 1. In a separate tab, go to to the **Releases** page for this repository.
     - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link.
-1. Click the **Edit** button next to your draft release.
-1.Practice your semantic version syntax. What should this version be labeled?
+1. Click the **New Release** button. 
+1. Set the _Target_ branch to `main`.
+1. Practice your semantic version syntax. What should the tag and title for this release be?
+1. To the top right of the description text box, click **Generate release notes**.
+1. Review the release notes in the text box and customize the content if desired.
 1. Click **Publish release**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
 
 
-<details id=8>
+<details id=x>
 <summary><h2>Finish</h2></summary>
 
 ### Congratulations friend, you've completed this course! :tada:

@@ -1,30 +1,37 @@
-name: Step 4, TBD-step-4-name
+name: Check step 4, generate release notes and merge
 
-# This step triggers after TBD-step-4-event-desc
+# This step triggers after 3-release-pr-opened.yml
 # This step sets STEP to 5
 # This step closes <details id=4> and opens <details id=5>
 
-# This will run every time we TBD-step-4-event-desc
+# This will run when a pull request to main is closed (merged)
 # Reference https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
-  TBD-step-4-event:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
 
+
+# Reference https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
-  # Need `contents: read` to checkout the repository
-  # Need `contents: write` to update the step metadata
   contents: write
 
 jobs:
-  on_TBD-step-4-event:
-    name: On TBD-step-4-event
+  on_release_merged:
+    name: On release-v1.0 merged
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
-    # 2. The STEP is currently 4 (see update-step.sh)
+    # 2. The pull request was closed through a merge
+    # 3. The pull request head branch is release-v1.0
     # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
-    if: ${{ github.repository_owner != 'TBD-organization' }}
+    if: ${{ !github.event.repository.is_template 
+        && github.event.pull_request.merged == true
+        && github.head_ref == 'release-v1.0'}}
 
     # We'll run Ubuntu for performance instead of Mac or Windows
     runs-on: ubuntu-latest
@@ -34,17 +41,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0 # Let's get all the branches
-
-      # TBD-step-4-additional-steps
+          fetch-depth: 0
 
       # Update README to close <details id=4>
       # and open <details id=5>
       # and set STEP to '5'
-      - name: Update to step 5
-        run: ./.github/script/update-step.sh
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FROM_STEP: 4
-          TO_STEP: 5
-          BRANCH_NAME: TBD-branch-name
+      - name: Update to step 2
+        uses: skills/action-update-step@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          from_step: 4
+          to_step: 5
+  

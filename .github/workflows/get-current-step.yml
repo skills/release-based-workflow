@@ -1,0 +1,25 @@
+name: 'Get Current STEP'
+
+on:
+  workflow_call:
+    outputs:
+      current_step: 
+        description: 'Current value of STEP'
+        value: ${{ jobs.get_step.outputs.current_step }}
+jobs:
+  get_step:
+    name: Get current step
+    runs-on: ubuntu-latest
+    outputs:
+      current_step: ${{ steps.get_step.outputs.current_step }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+          ref: main
+      - id: get_step
+        name: Get current step
+        run: |
+          echo "::set-output name=current_step::$(cat ./.github/script/STEP)"
+          echo "current STEP: $(cat ./.github/script/STEP)"
