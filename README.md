@@ -65,7 +65,7 @@ Before using a release based workflow for a larger release, let's create a tag a
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
 1. Go to the **Releases** page for this repository.
     - You can click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click **0 releases**.
-1. Click **Create a new release**.
+1. Click **Draft a new release**.
 1. In the field for _Tag version_, specify a number. In this case, use **v0.9**. Keep the _Target_ as **main**.
 1. Give the release a title, like "First beta release". If you'd like, you could also give the release a short description.
 1. Select the checkbox next to **This is a pre-release**, since it is representing a beta version.
@@ -169,7 +169,8 @@ _Nicely done opening a release pull request :partying_face:_
 
 1. In a separate tab, go to the **Releases** page for this repository.
     - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link
-1. Click the **New Release** button.
+1. Click the **Draft a new release** button.
+1. In the field for _Tag version_, specify `v1.0.0`
 1. To the right of the tag dropdown, click the _Target_ dropddown and select the `release-v1.0` branch. 
     - This is temporary in order to generate release notes based on the changes in this branch.
 1. To the top right of the description text box, click **Generate release notes**.
@@ -223,8 +224,7 @@ Let's now change our recently automated release from _draft_ to _latest release_
 1. In a separate tab, go to the **Releases** page for this repository.
     - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link
 1. Click the **Edit** button next to your draft release.
-1. In the field for _Tag version_, specify `v1.0.0`
-1. Using semantic versioning, then type `v1.0.0` as your release title.
+1. Ensure the _Target_ branch is set to `main`.
 1. Click **Publish release**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
@@ -280,7 +280,7 @@ With descriptive pull requests and auto generated release notes, you don't have 
 
 1. In a separate tab, go to to the **Releases** page for this repository.
     - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link.
-1. Click the **New Release** button. 
+1. Click the **Draft a new release** button. 
 1. Set the _Target_ branch to `main`.
 1. Practice your semantic version syntax. What should the tag and title for this release be?
 1. To the top right of the description text box, click **Generate release notes**.

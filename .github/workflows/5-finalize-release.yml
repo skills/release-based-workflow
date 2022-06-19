@@ -1,4 +1,4 @@
-name: Check step 1, Create a beta release
+name: Check step 5, commit a hotfix
 
 # This step triggers after 4-release-notes-and-merge.yml
 # This step sets STEP to 6
