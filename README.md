@@ -105,11 +105,11 @@ Releases are usually made of many smaller changes. Since we don't know of any bu
 ### :keyboard: Activity: Update `base.css`
 
 1. Create a new branch and change the `body` CSS declaration in `base.css` to match what is below. This will set the page background to black.
-    ```
-    body {
-        background-color: black;
-    }
-    ```
+```
+body {
+    background-color: black;
+}
+```
 1. Open a pull request with `release-v1.0` as the `base` branch, and your new branch as `compare`.
 1. Fill in the pull request template to describe your changes.
 
@@ -150,7 +150,12 @@ Let's make a new pull request comparing the `release-v1.0` branch to the `main` 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
 1. Open a **new pull request** with `base: main` and `compare: release-v1.0`.
 1. Ensure the title of your pull request is **Release v1.0**
-1. Include a detailed pull request body.
+1. Include a detailed pull request body, an example is below.
+    ```
+    ## Description: 
+    - Changed page background color to black
+    - Changed game text color to green
+    ```
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
