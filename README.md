@@ -7,19 +7,17 @@
 
 <img src="https://repository-images.githubusercontent.com/155359349/f0a13e00-586d-11ea-8d2c-40a17f4ee083" width=300 align=right>
 
-### Create a release based workflow
-
-_Create a release-based workflow that is built on the foundations of the [GitHub flow](https://guides.github.com/introduction/flow/)._
+### Create a release-based workflow
 
 <!--step0-->
-When your team uses a release-based workflow, GitHub makes it easy to collaborate with deployable iterations of your project that you can package and make available for a wider audience to download and use.
+Create a release-based workflow that is built on the foundations of the [GitHub flow](https://guides.github.com/introduction/flow/). When your team uses a release-based workflow, GitHub makes it easy to collaborate with deployable iterations of your project that you can package and make available for a wider audience to download and use.
 
 GitHub releases allow your team to package and provide software to your users based on a specific point in the history of your project.
 
-- **Who is this for**: Developers, DevOps Engineers, IT Operations, managers, teams.
+- **Who is this for**: Developers, DevOps Engineers, IT Operations, managers, and teams.
 - **What you'll learn**: How to follow a release-based workflow.
 - **What you'll build**: You will create tags, releases, and release notes.
-- **Prerequisites**: If you need to learn about branches, commits, and pull requests, take [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github) first.
+- **Prerequisites**: If you need to learn about branches, commits, and pull requests, take [Introduction to GitHub](https://github.com/skills/introduction-to-github) first.
 - **How long**: This course is 7 steps long and takes less than 1 hour to complete.
 
 ## How to start this course
