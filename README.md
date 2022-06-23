@@ -35,13 +35,11 @@ GitHub releases allow your team to package and provide software to your users ba
 <details id=1>
 <summary><h2>Step 1: Create a beta release</h2></summary>
 
-_Welcome to "Create a release based workflow"! :wave:_
-
 ### The GitHub flow
 
-![github-flow](https://user-images.githubusercontent.com/6351798/48032310-63842400-e114-11e8-8db0-06dc0504dcb5.png)
-
 The [GitHub flow](https://guides.github.com/introduction/flow/) is a lightweight, branch-based workflow for projects with regular deployments.
+
+![github-flow](https://user-images.githubusercontent.com/6351798/48032310-63842400-e114-11e8-8db0-06dc0504dcb5.png)
 
 Some projects may deploy more often, with continuous deployment. There might be a "release" every time there's a new commit on main.
 
@@ -51,27 +49,26 @@ But, some projects rely on a different structure for versions and releases.
 
 Versions are different iterations of updated software like operating systems, apps, or dependencies. Common examples are "Windows 8.1" to "Windows 10", or "macOS High Sierra" to "macOS Mojave".
 
-Developers update code, and then run tests on the project for bugs. During that time, the developers might set up certain securities to protect from new code or bugs. Then, the tested code is ready for production. Teams version the code and release it for installation by end users.
+Developers update code and then run tests on the project for bugs. During that time, the developers might set up certain securities to protect from new code or bugs. Then, the tested code is ready for production. Teams version the code and release it for installation by end users.
 
 ### :keyboard: Activity: Create a release for the current codebase
 In this step, you will create a release for this repository on GitHub.
 
-GitHub Releases point to a specific commit. Releases can include release notes in Markdown, and attached binaries.
+GitHub Releases point to a specific commit. Releases can include release notes in Markdown files, and attached binaries.
 
 Before using a release based workflow for a larger release, let's create a tag and a release.
 
 1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
 1. Go to the **Releases** page for this repository.
     - You can click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click **0 releases**.
-1. Click **Create a new release**.
-1. In the field for _Tag version_, specify a number. In this case, use **v0.9**. Keep the _Target_ as **main**.
-1. Give the release a title, like "First beta release". If you'd like, you could also give the release a short description.
-1. Select the checkbox next to **This is a pre-release**, since it is representing a beta version.
-1. Click **Publish release**.
-1. Wait about 20 seconds then refresh this page for the next step.
+1. Click **Create a new release**
+1. In the field for _Tag version_, specify a number. In this case, use **v0.9**. Keep the _Target_ as **main**
+1. Give the release a title, like "First beta release". If you'd like, you could also give the release a short description
+1. Select the checkbox next to **This is a pre-release**, since it is representing a beta version
+1. Click **Publish release**
+1. Wait about 20 seconds then refresh this page for the next step
 
 </details>
-
 
 <!--Step 2-->
 <details id=2>
