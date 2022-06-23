@@ -274,27 +274,25 @@ With descriptive pull requests and auto generated release notes, you don't have 
 
 </details>
 
-
 <details id=x>
 <summary><h2>Finish</h2></summary>
 
-### Congratulations friend, you've completed this course! :tada:
+### Congratulations friend, you've completed this course!
 
 Here's a recap of all the tasks you've accomplished in your repository:
 
-- Create a beta release
-- Add a new feature to the release branche
+- Create a beta release.
+- Add a new feature to the release branche.
 - Open a release pull request
-- Automate release notes
-- Merge and finalize the release branch
-- Commit a hotfix to the release
-- Create release v1.0.1
+- Automate release notes.
+- Merge and finalize the release branch.
+- Commit a hotfix to the release.
+- Create release v1.0.1.
 
 ### What's next?
 
-- TBD-continue.
 - [We'd love to hear what you thought of this course](TBD-feedback-link).
-- [Take another TBD-organization Course](https://github.com/TBD-organization).
+- [Take another GitHub Skills course](https://github.com/skills).
 - [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
