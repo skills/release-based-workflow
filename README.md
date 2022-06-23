@@ -218,20 +218,17 @@ Now let's change our recently automated release from _draft_ to _latest release_
 
 </details>
 
-
 <!--Step 6-->
 <details id=6>
 <summary><h2>Step 6: Commit a hotfix to the release</h2></summary>
-
-### Thanks for the merge :tada:
 
 Notice that I didn't delete the branch? That's intentional.
 
 Sometimes mistakes can happen with releases, and we'll want to be able to correct them on the same branch.
 
-Now that your release is finalized, we have a confession to make... somewhere in our recent update, I made a mistake and introduced a bug. Instead of changing the text colors to green, we changed the whole game background.
+Now that your release is finalized, we have a confession to make. Somewhere in our recent update, I made a mistake and introduced a bug. Instead of changing the text colors to green, we changed the whole game background.
 
-_Sometimes GitHub Pages takes a few minutes to update. Your page might not immediately show the recent updates you've made._
+_Tip: Sometimes GitHub Pages takes a few minutes to update. Your page might not immediately show the recent updates you've made._
 
 ![image](https://user-images.githubusercontent.com/13326548/48045461-487dd800-e145-11e8-843c-b91a82213eb8.png)
 
@@ -244,10 +241,10 @@ We've already created this branch and pull request. The suggested change will be
 Submit a hotfix by approving and merging the pull request.
 
 ### :keyboard: Activity: Merge the hotfix
-1. In a separate tab, go to the **Pull requests** page and view the open pull request.
-1. Review the changes and approve the pull request.
-1. Click **Merge pull request**.
-1. Wait about 20 seconds then refresh this page for the next step.
+1. In a separate tab, go to the **Pull requests** page and view the open pull request
+1. Review the changes and approve the pull request
+1. Click **Merge pull request**
+1. Wait about 20 seconds then refresh this page for the next step
 
 </details>
 
