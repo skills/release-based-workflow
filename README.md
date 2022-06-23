@@ -118,24 +118,20 @@ Merge this feature pull request so that you can open the release pull request as
 
 </details>
 
-
 <!--Step 3-->
 <details id=3>
 <summary><h2>Step 3: Open a release pull request</h2></summary>
-
-_Nice work adding a new feature to the release branch :sparkles:_
 
 ### Release branches and `main`
 
 You should open a pull request between your release branch and main as early as possible. It might be open for a long time, and that's okay.
 
-In general, the pull request description could include:
+In general, the pull request description can include:
 - A [reference to an issue](https://docs.github.com/en/articles/basic-writing-and-formatting-syntax/#mentioning-people-and-teams) that the pull request addresses.
 - A description of the changes proposed in the pull request.
 - [@mentions](https://docs.github.com/en/articles/basic-writing-and-formatting-syntax/#mentioning-people-and-teams) of the person or team responsible for reviewing proposed changes.
 
-To expedite the creation of this pull request, I've added a pull request template to the repository. When you create a pull request, default text will automatically be displayed, this should help you identify and fill out all the necessary information. If you don't want to use the template content, just remove the text from the pull request and repace it with your pull request message.
-
+To expedite the creation of this pull request, I've added a pull request template to the repository. When you create a pull request, default text will automatically be displayed. This should help you identify and fill out all the necessary information. If you don't want to use the template content, just remove the text from the pull request and repace it with your pull request message.
 
 ### :keyboard: Activity: Open a release pull request
 Let's make a new pull request comparing the `release-v1.0` branch to the `main` branch.
