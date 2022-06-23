@@ -7,7 +7,7 @@
 
 <img src="https://repository-images.githubusercontent.com/155359349/f0a13e00-586d-11ea-8d2c-40a17f4ee083" width=300 align=right>
 
-# Create a release based workflow
+### Create a release based workflow
 
 _Create a release-based workflow that is built on the foundations of the [GitHub flow](https://guides.github.com/introduction/flow/)._
 
