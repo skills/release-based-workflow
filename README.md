@@ -74,8 +74,6 @@ Before using a release based workflow for a larger release, let's create a tag a
 <details id=2>
 <summary><h2>Step 2: Add a new feature to the release branch</h2></summary>
 
-_You created a beta release! :tada:_
-
 ### Release management
 
 As you prepare for a future release, you'll need to organize more than the tasks and features. It's important to create a clear workflow for your team, and to make sure that the work remains organized.
@@ -94,19 +92,19 @@ Like the `main` branch, you can protect release branches. This means you can pro
 
 Releases are usually made of many smaller changes. Since we don't know of any bugs, we'll focus on a few features to update on our game before the version update.
 
-- You should update the page background color to black
-- I'll help you change the text colors to green
+- You should update the page background color to black.
+- I'll help you change the text colors to green.
 
 ### :keyboard: Activity: Update `base.css`
 
-1. Create a new branch and change the `body` CSS declaration in `base.css` to match what is below. This will set the page background to black.
+1. Create a new branch and change the `body` CSS declaration in `base.css` to match what is below. This will set the page background to black
 ```
 body {
     background-color: black;
 }
 ```
-1. Open a pull request with `release-v1.0` as the `base` branch, and your new branch as `compare`.
-1. Fill in the pull request template to describe your changes.
+2. Open a pull request with `release-v1.0` as the `base` branch, and your new branch as `compare`
+3. Fill in the pull request template to describe your changes
 
 ### Merge the new feature to the release branch
 Even with releases, the GitHub flow is still an important strategy for working with your team. It's a good idea to use short-lived branches for quick feature additions and bug fixes.
