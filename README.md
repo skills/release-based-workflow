@@ -212,6 +212,7 @@ Now let's change our recently automated release from _draft_ to _latest release_
 1. In a separate tab, go to the **Releases** page for this repository
     - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link
 1. Click the **Edit** button next to your draft release
+1. Click the **Draft a new release** button
 1. Ensure the _Target_ branch is set to `main`
 1. Click **Publish release**
 1. Wait about 20 seconds then refresh this page for the next step
