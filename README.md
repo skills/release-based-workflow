@@ -7,7 +7,7 @@
 
 # Create a release based workflow
 
-<!--step0-->
+<!--step0
 Create a release based workflow that is built on the foundations of the [GitHub flow](https://guides.github.com/introduction/flow/). When your team uses a release-based workflow, GitHub makes it easy to collaborate with deployable iterations of your project that you can package and make available for a wider audience to download and use.
 
 GitHub releases allow your team to package and provide software to your users based on a specific point in the history of your project.
@@ -27,10 +27,10 @@ GitHub releases allow your team to package and provide software to your users ba
    - We recommend creating a public repository-private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
    ![Create a new repository](https://user-images.githubusercontent.com/1221423/169618722-406dc508-add4-4074-83f0-c7a7ad87f6f3.png)
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
-<!--endstep0-->
+endstep0-->
 
 <!--Step 1-->
-<details id=1>
+<details id=1 open>
 <summary><h2>Step 1: Create a beta release</h2></summary>
 
 ### The GitHub flow
