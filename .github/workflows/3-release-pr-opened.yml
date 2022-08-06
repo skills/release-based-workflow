@@ -24,7 +24,7 @@ jobs:
     # 2. The pull request head branch is 'release-v1.0' 
     # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
-    if: ${{ !github.event.repository.is_template 
+    if: ${{ !github.event.repository.is_template
         && github.head_ref == 'release-v1.0' }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows

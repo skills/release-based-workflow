@@ -28,7 +28,7 @@ jobs:
     # 3. The pull request head branch is hotfix-v1.0.1
     # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
-    if: ${{ !github.event.repository.is_template 
+    if: ${{ !github.event.repository.is_template
         && github.event.pull_request.merged == true
         && github.head_ref == 'hotfix-v1.0.1'}}
 
