@@ -31,7 +31,7 @@ jobs:
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
     if: ${{ !github.event.repository.is_template
         && github.event.pull_request.merged == true
-        && github.head_ref == 'release-v1.0'}}
+        && github.head_ref == 'release-v1.0' }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows
     runs-on: ubuntu-latest
