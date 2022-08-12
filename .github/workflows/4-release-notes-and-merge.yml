@@ -39,11 +39,12 @@ jobs:
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
-    # 2. The pull request was closed through a merge
-    # 3. The pull request head branch is release-v1.0
+    # 1. The STEP is currently '4'
+    # 1. The pull request was closed through a merge
+    # 1. The pull request head branch is release-v1.0
     # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
-    if: ${{ !github.event.repository.is_template && needs.get_current_step.outputs.current_step == 4 && github.event.pull_request.merged == true && github.head_ref == 'release-v1.0'}}
+    if: ${{ !github.event.repository.is_template && needs.get_current_step.outputs.current_step == 4 && github.event.pull_request.merged == true && github.head_ref == 'release-v1.0' }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows
     runs-on: ubuntu-latest
