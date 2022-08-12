@@ -18,13 +18,22 @@ permissions:
   pull-requests: write
 
 jobs:
-  setup:
-    name: Setup
-    uses: ./.github/workflows/get-current-step.yml
+  get_current_step:
+    name: Check current step number
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - id: get_step
+        run: |
+          echo '::echo::on'
+          echo "::set-output name=current_step::$(cat ./.github/script/STEP)"
+    outputs:
+      current_step: ${{ steps.get_step.outputs.current_step }}
 
   on_start:
     name: On start
-    needs: setup
+    needs: get_current_step
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
@@ -32,8 +41,7 @@ jobs:
     # 3. This is the first workflow run on the repository
     # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
-    if: ${{ !github.event.repository.is_template
-        && needs.setup.outputs.current_step == 0 }}
+    if: ${{ !github.event.repository.is_template && needs.get_current_step.outputs.current_step == 0 }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows
     runs-on: ubuntu-latest
