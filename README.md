@@ -165,8 +165,7 @@ Let's make a new pull request comparing the `release-v1.0` branch to the `main` 
 1. To the top right of the description text box, click **Generate release notes**
 1. Review the release notes in the text box and customize the content if desired
 1. Set the _Target_ branch back to the `main`, as this is the branch you want to create your tag on once the release branch is merged
-1. Select the checkbox next to **This is a pre-release**, since it is representing a beta version
-1. Click **Save draft**
+1. Click **Save draft**, as you will publish this release in the next step
 
 You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge) your pull request!
 
