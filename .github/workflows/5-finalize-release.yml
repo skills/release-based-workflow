@@ -36,6 +36,7 @@ jobs:
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
+    # 1. The STEP is currently '5'
     # 1. The tag for the published release is v1.0.0
     # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
