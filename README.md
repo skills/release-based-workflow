@@ -95,7 +95,7 @@ Releases are usually made of many smaller changes. Since we don't know of any bu
 
 ### :keyboard: Activity: Update `base.css`
 
-1. Create a new branch and change the `body` CSS declaration in `base.css` to match what is below. This will set the page background to black
+1. Create a new branch from the `main` branch and change the `body` CSS declaration in `base.css` to match what is below. This will set the page background to black
 ```
 body {
     background-color: black;
