@@ -27,8 +27,7 @@ jobs:
         uses: actions/checkout@v3
       - id: get_step
         run: |
-          echo '::echo::on'
-          echo "::set-output name=current_step::$(cat ./.github/script/STEP)"
+          echo "current_step=$(cat ./.github/script/STEP)" >> $GITHUB_OUTPUT
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
@@ -38,12 +37,16 @@ jobs:
 
     # We will only run this action when:
     # 1. This repository isn't the template repository
-    # 1. The STEP is currently '6'
-    # 1. The pull request was closed through a merge
-    # 1. The pull request head branch is hotfix-v1.0.1
+    # 2. The STEP is currently 6
+    # 3. The pull request was closed through a merge
+    # 4. The pull request head branch is hotfix-v1.0.1
     # Reference https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference https://docs.github.com/en/actions/learn-github-actions/expressions
-    if: ${{ !github.event.repository.is_template && needs.get_current_step.outputs.current_step == 6 && github.event.pull_request.merged == true && github.head_ref == 'hotfix-v1.0.1' }}
+    if: >-
+      ${{ !github.event.repository.is_template
+          && needs.get_current_step.outputs.current_step == 6
+          && github.event.pull_request.merged == true
+          && github.head_ref == 'hotfix-v1.0.1' }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows
     runs-on: ubuntu-latest
