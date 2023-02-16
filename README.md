@@ -36,6 +36,8 @@ GitHub releases allow your team to package and provide software to your users ba
 <details id=1>
 <summary><h2>Step 1: Create a beta release</h2></summary>
 
+_Welcome to "Release-based workflow" :sparkle:_
+
 ### The GitHub flow
 
 The [GitHub flow](https://guides.github.com/introduction/flow/) is a lightweight, branch-based workflow for projects with regular deployments.
@@ -88,6 +90,8 @@ To set the stage for later, let's also add a bug that we'll fix as part of the r
 <details id=2>
 <summary><h2>Step 2: Add a new feature to the release branch</h2></summary>
 
+_Great job creating a beta release :heart:_
+
 ### Release management
 
 As you prepare for a future release, you'll need to organize more than the tasks and features. It's important to create a clear workflow for your team, and to make sure that the work remains organized.
@@ -137,6 +141,8 @@ Merge this feature pull request so that you can open the release pull request as
 <details id=3>
 <summary><h2>Step 3: Open a release pull request</h2></summary>
 
+_Nice work adding a new feature :smile:_
+
 ### Release branches and `main`
 
 You should open a pull request between your release branch and main as early as possible. It might be open for a long time, and that's okay.
@@ -168,6 +174,8 @@ Let's make a new pull request comparing the `release-v1.0` branch to the `main` 
 <details id=4>
 <summary><h2>Step 4: Generate release notes and merge</h2></summary>
 
+_Thanks for opening that pull request :dancer:_
+
 ### Automatically generated release notes
 [Automatically generated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes) provide an automated alternative to manually writing release notes for your GitHub releases. With automatically generated release notes, you can quickly generate an overview of the contents of a release. Automatically generated release notes include a list of merged pull requests, a list of contributors to the release, and a link to a full changelog. You can also customize your release notes once they are generated.
 
@@ -198,6 +206,8 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
 <!--Step 5-->
 <details id=5>
 <summary><h2>Step 5: Finalize the release</h2></summary>
+
+_Awesome work on the release notes :+1:_
 
 ### Finalizing releases
 
@@ -236,6 +246,8 @@ Now let's change our recently automated release from _draft_ to _latest release_
 <!--Step 6-->
 <details id=6>
 <summary><h2>Step 6: Commit a hotfix to the release</h2></summary>
+
+_Almost there :heart:_
 
 Notice that I didn't delete the branch? That's intentional.
 
@@ -283,6 +295,8 @@ Now we want these changes merged into `main` as well so let's create and merge a
 <details id=7>
 <summary><h2>Step 7: Create release v1.0.1</h2></summary>
 
+_One last step to go!_
+
 ### A final release
 
 You updated the source code, but users can't readily access your most recent changes. Prepare a new release, and distribute that release to the necessary channels.
@@ -307,6 +321,8 @@ With descriptive pull requests and auto generated release notes, you don't have 
 
 <details id=x>
 <summary><h2>Finish</h2></summary>
+
+<img src="https://octodex.github.com/images/snowtocat_final.jpg" alt=celebrate width=300 align=right>
 
 ### Congratulations friend, you've completed this course!
 
