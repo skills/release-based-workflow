@@ -235,14 +235,23 @@ _Tip: Sometimes GitHub Pages takes a few minutes to update. Your page might not 
 
 "Hotfixes", or a quick fix to address a bug in software, are a normal part of development. Oftentimes you'll see application updates whose only description is "bug fixes".
 
-When bugs come up after you release a version, you'll need to address them.
+When bugs come up after you release a version, you'll need to address them.  We've already created a `hotfix-v1.0.1` and `fix-game-background` branches for you to start.
 
-We've already created this branch and pull request. The suggested change will be merged into the main branch. Later we will `cherry-pick` the hotfix commits into the release branch.
+We'll submit a hotfix by approving and merging the pull request.
 
-Submit a hotfix by approving and merging the pull request.
+### :keyboard: Activity: Create and merge the hotfix pull request
 
-### :keyboard: Activity: Merge the hotfix
-1. In a separate tab, go to the **Pull requests** page and view the open pull request
+1. Open a pull request with `hotfix-v1.0.1` as the `base` branch, and `fix-game-background` as the `compare` branch
+1. Fill in the pull request template to describe your changes (e.g. `Hotfix for broken game style` as the title and `Fixed bug, set game background back to black` as the body content)
+1. Review the changes and approve the pull request
+1. Click **Merge pull request**
+1. Wait about 20 seconds then refresh this page for the next step
+
+Now we want these changes merged into `main` as well so let's create and merge a pull request with our hotfix to `main`.
+### :keyboard: Activity: Create the release pull request
+
+1. Open a pull request with `main` as the `base` branch, and `hotfix-v1.0.1` as the `compare` branch
+1. Fill in the pull request template to describe your changes (e.g. `Hotfix v1.0.1` as the title and `Fixed bug introduced in last production release - set game background back to black` as the body content)
 1. Review the changes and approve the pull request
 1. Click **Merge pull request**
 1. Wait about 20 seconds then refresh this page for the next step
