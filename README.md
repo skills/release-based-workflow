@@ -256,7 +256,7 @@ We'll submit a hotfix by creating and merging the pull request.
 ### :keyboard: Activity: Create and merge the hotfix pull request
 
 1. Open a pull request with `hotfix-v1.0.1` as the `base` branch, and `fix-game-background` as the `compare` branch
-1. Fill in the pull request template to describe your changes, you can set the pull request title to `Hotfix for broken game style` and you can include a detailed pull request body, an example is below
+1. Fill in the pull request template to describe your changes. You can set the pull request title to `Hotfix for broken game style`. You can include a detailed pull request body, an example is below:
     ```
     ## Description:
     - Fixed bug, set game background back to black
