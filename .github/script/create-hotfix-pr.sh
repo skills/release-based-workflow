@@ -31,12 +31,5 @@ git commit -m "Set game background back to black"
 echo "Push feature branch"
 git push --set-upstream origin $FEATURE_BRANCH
 
-echo "Create PR to hotfix release branch and merge"
-gh pr create --base $RELEASE_BRANCH --head $FEATURE_BRANCH --title "Hotfix for broken game style" --body "Fixed bug, set game background back to black"
-gh pr merge --squash $FEATURE_BRANCH
-
-echo "Create PR for hotfix to main"
-gh pr create --base main --head $RELEASE_BRANCH --title "Hotfix v1.0.1" --body "Fixed bug introduced in last production release - set game background back to black."
-
 echo "Restore main"
 git checkout main
