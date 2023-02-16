@@ -65,9 +65,24 @@ Before using a release based workflow for a larger release, let's create a tag a
 1. Click **Create a new release**
 1. In the field for _Tag version_, specify a number. In this case, use **v0.9**. Keep the _Target_ as **main**
 1. Give the release a title, like "First beta release". If you'd like, you could also give the release a short description
-1. Select the checkbox next to **This is a pre-release**, since it is representing a beta version
+1. Select the checkbox next to **Set as a pre-release**, since it is representing a beta version
 1. Click **Publish release**
 1. Wait about 20 seconds then refresh this page for the next step
+
+### :keyboard: Activity: Introduce a bug to be fixed later
+
+To set the stage for later, let's also add a bug that we'll fix as part of the release workflow in later steps.  We've already created a `update-text-colors` branch for you so let's create and merge a pull request with this branch.
+
+1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab
+1. Open a **new pull request** with `base: release` and `compare: update-text-colors`
+1. Set the pull request title to `Updated game text style` and you can include a detailed pull request body, an example is below
+    ```
+    ## Description:
+    - Updated game text color to green
+    ```
+1. Click `Create pull request`
+1. We'll also merge this pull request now so click `Merge pull request` and delete your branch.
+1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
 
@@ -146,6 +161,7 @@ Let's make a new pull request comparing the `release-v1.0` branch to the `main` 
     - Changed page background color to black.
     - Changed game text color to green.
     ```
+1. Click `Create pull request`
 1. Wait about 20 seconds then refresh this page for the next step
 
 </details>
@@ -214,7 +230,7 @@ Now let's change our recently automated release from _draft_ to _latest release_
     - To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link
 1. Click the **Edit** button next to your draft release
 1. Ensure the _Target_ branch is set to `main`
-1. Click **Update release**
+1. Click **Publish release**
 1. Wait about 20 seconds then refresh this page for the next step
 
 </details>
@@ -237,7 +253,7 @@ _Tip: Sometimes GitHub Pages takes a few minutes to update. Your page might not 
 
 When bugs come up after you release a version, you'll need to address them.  We've already created a `hotfix-v1.0.1` and `fix-game-background` branches for you to start.
 
-We'll submit a hotfix by approving and merging the pull request.
+We'll submit a hotfix by creating and merging the pull request.
 
 ### :keyboard: Activity: Create and merge the hotfix pull request
 
