@@ -79,7 +79,7 @@ To set the stage for later, let's also add a bug that we'll fix as part of the r
     - Updated game text color to green
     ```
 1. Click `Create pull request`
-1. We'll  merge this pull request now so click `Merge pull request` and delete your branch.
+1. We'll merge this pull request now. Click `Merge pull request` and delete your branch.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
