@@ -73,7 +73,7 @@ Before using a release based workflow for a larger release, let's create a tag a
 To set the stage for later, let's also add a bug that we'll fix as part of the release workflow in later steps.  We've already created a `update-text-colors` branch for you so let's create and merge a pull request with this branch.
 
 1. Open a **new pull request** with `base: release-v1.0` and `compare: update-text-colors`
-1. Set the pull request title to `Updated game text style` and you can include a detailed pull request body, an example is below
+1. Set the pull request title to `Updated game text style`. You can include a detailed pull request body, an example is below:
     ```
     ## Description:
     - Updated game text color to green
