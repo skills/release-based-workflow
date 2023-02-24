@@ -7,7 +7,9 @@
 
 # Create a release based workflow
 
-<!--step0-->
+<details id=0 open>
+<summary><h2>Welcome</h2></summary>
+
 Create a release based workflow that is built on the foundations of the [GitHub flow](https://guides.github.com/introduction/flow/). When your team uses a release-based workflow, GitHub makes it easy to collaborate with deployable iterations of your project that you can package and make available for a wider audience to download and use.
 
 GitHub releases allow your team to package and provide software to your users based on a specific point in the history of your project.
@@ -20,14 +22,15 @@ GitHub releases allow your team to package and provide software to your users ba
 
 ## How to start this course
 
-1. Above these instructions, right-click **Use this template** and open the link in a new tab.
-   ![Use this template](https://user-images.githubusercontent.com/1221423/169618716-fb17528d-f332-4fc5-a11a-eaa23562665e.png)
+1. Right-click **Start course** and open the link in a new tab.
+   <br />[![start-course](https://user-images.githubusercontent.com/1221423/218596841-0645fe1a-4aaf-4f51-9ab3-8aa2d3fdd487.svg)](https://github.com/skills/release-based-workflow/generate)
 2. In the new tab, follow the prompts to create a new repository.
    - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository-private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   ![Create a new repository](https://user-images.githubusercontent.com/1221423/169618722-406dc508-add4-4074-83f0-c7a7ad87f6f3.png)
+   - We recommend creating a public repository—private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+   ![Create a new repository](https://user-images.githubusercontent.com/1221423/218594143-e60462b6-9f2a-4fa3-80de-063ac5429aab.png)
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
-<!--endstep0-->
+
+</details>
 
 <!--Step 1-->
 <details id=1>
@@ -62,9 +65,22 @@ Before using a release based workflow for a larger release, let's create a tag a
 1. Click **Create a new release**
 1. In the field for _Tag version_, specify a number. In this case, use **v0.9**. Keep the _Target_ as **main**
 1. Give the release a title, like "First beta release". If you'd like, you could also give the release a short description
-1. Select the checkbox next to **This is a pre-release**, since it is representing a beta version
+1. Select the checkbox next to **Set as a pre-release**, since it is representing a beta version
 1. Click **Publish release**
-1. Wait about 20 seconds then refresh this page for the next step
+
+### :keyboard: Activity: Introduce a bug to be fixed later
+
+To set the stage for later, let's also add a bug that we'll fix as part of the release workflow in later steps.  We've already created a `update-text-colors` branch for you so let's create and merge a pull request with this branch.
+
+1. Open a **new pull request** with `base: release-v1.0` and `compare: update-text-colors`
+1. Set the pull request title to `Updated game text style`. You can include a detailed pull request body, an example is below:
+    ```
+    ## Description:
+    - Updated game text color to green
+    ```
+1. Click `Create pull request`
+1. We'll merge this pull request now. Click `Merge pull request` and delete your branch.
+1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
 
@@ -88,21 +104,22 @@ Like the `main` branch, you can protect release branches. This means you can pro
 
 ### Add a feature
 
-Releases are usually made of many smaller changes. Since we don't know of any bugs, we'll focus on a few features to update on our game before the version update.
+Releases are usually made of many smaller changes. Let's pretend we don't know about the bug we added earlier and we'll focus on a few features to update our game before the version update.
 
 - You should update the page background color to black.
 - I'll help you change the text colors to green.
 
 ### :keyboard: Activity: Update `base.css`
 
-1. Create a new branch from the `main` branch and change the `body` CSS declaration in `base.css` to match what is below. This will set the page background to black
+1. Create a new branch off of the `main` branch and change the `body` CSS declaration in `base.css` to match what is below. This will set the page background to black
 ```
 body {
     background-color: black;
 }
 ```
-2. Open a pull request with `release-v1.0` as the `base` branch, and your new branch as `compare`
-3. Fill in the pull request template to describe your changes
+1. Open a pull request with `release-v1.0` as the `base` branch, and your new branch as the `compare` branch
+1. Fill in the pull request template to describe your changes
+1. Click `Create pull request`
 
 ### Merge the new feature to the release branch
 Even with releases, the GitHub flow is still an important strategy for working with your team. It's a good idea to use short-lived branches for quick feature additions and bug fixes.
@@ -134,7 +151,6 @@ To expedite the creation of this pull request, I've added a pull request templat
 ### :keyboard: Activity: Open a release pull request
 Let's make a new pull request comparing the `release-v1.0` branch to the `main` branch.
 
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab
 1. Open a **new pull request** with `base: main` and `compare: release-v1.0`
 1. Ensure the title of your pull request is **Release v1.0**
 1. Include a detailed pull request body, an example is below
@@ -143,6 +159,7 @@ Let's make a new pull request comparing the `release-v1.0` branch to the `main` 
     - Changed page background color to black.
     - Changed game text color to green.
     ```
+1. Click `Create pull request`
 1. Wait about 20 seconds then refresh this page for the next step
 
 </details>
@@ -232,15 +249,31 @@ _Tip: Sometimes GitHub Pages takes a few minutes to update. Your page might not 
 
 "Hotfixes", or a quick fix to address a bug in software, are a normal part of development. Oftentimes you'll see application updates whose only description is "bug fixes".
 
-When bugs come up after you release a version, you'll need to address them.
+When bugs come up after you release a version, you'll need to address them.  We've already created a `hotfix-v1.0.1` and `fix-game-background` branches for you to start.
 
-We've already created this branch and pull request. The suggested change will be merged into the main branch. Later we will `cherry-pick` the hotfix commits into the release branch.
+We'll submit a hotfix by creating and merging the pull request.
 
-Submit a hotfix by approving and merging the pull request.
+### :keyboard: Activity: Create and merge the hotfix pull request
 
-### :keyboard: Activity: Merge the hotfix
-1. In a separate tab, go to the **Pull requests** page and view the open pull request
-1. Review the changes and approve the pull request
+1. Open a pull request with `hotfix-v1.0.1` as the `base` branch, and `fix-game-background` as the `compare` branch
+1. Fill in the pull request template to describe your changes. You can set the pull request title to `Hotfix for broken game style`. You can include a detailed pull request body, an example is below:
+    ```
+    ## Description:
+    - Fixed bug, set game background back to black
+    ```
+1. Review the changes and click `Create pull request`
+1. We want to merge this into our hotfix branch now so click **Merge pull request**
+
+Now we want these changes merged into `main` as well so let's create and merge a pull request with our hotfix to `main`.
+### :keyboard: Activity: Create the release pull request
+
+1. Open a pull request with `main` as the `base` branch, and `hotfix-v1.0.1` as the `compare` branch
+1. Fill in the pull request template to describe your changes, you can set the pull request title to `Hotfix v1.0.1` and you can include a detailed pull request body, an example is below
+    ```
+    ## Description:
+    - Fixed bug introduced in last production release - set game background back to black
+    ```
+1. Review the changes and click `Create pull request`
 1. Click **Merge pull request**
 1. Wait about 20 seconds then refresh this page for the next step
 

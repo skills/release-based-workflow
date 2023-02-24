@@ -31,9 +31,5 @@ git commit -m "Changed game text colors to green"
 echo "Push feature branch"
 git push --set-upstream origin $FEATURE_BRANCH
 
-echo "Create PR to release branch and merge"
-gh pr create --base $RELEASE_BRANCH --head $FEATURE_BRANCH --title "Updated game text style" --body "Updated game text color to green"
-gh pr merge --squash update-text-colors
-
 echo "Restore main"
 git checkout main
