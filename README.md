@@ -158,7 +158,7 @@ To expedite the creation of this pull request, I've added a pull request templat
 Let's make a new pull request comparing the `release-v1.0` branch to the `main` branch.
 
 1. Open a **new pull request** with `base: main` and `compare: release-v1.0`.
-1. Ensure the title of your pull request is **Release v1.0**.
+1. Ensure the title of your pull request is "Release v1.0".
 1. Include a detailed pull request body, an example is below:
     ```
     ## Description: 
@@ -280,7 +280,8 @@ Now we want these changes merged into `main` as well so let's create and merge a
 ### :keyboard: Activity: Create the release pull request
 
 1. Open a pull request with `main` as the `base` branch, and `hotfix-v1.0.1` as the `compare` branch.
-1. Fill in the pull request template to describe your changes, you can set the pull request title to "Hotfix v1.0.1" and you can include a detailed pull request body, an example is below:
+1. Ensure the title of your pull request is "Hotfix v1.0.1".
+1. Include a detailed pull request body, an example is below:
     ```
     ## Description:
     - Fixed bug introduced in last production release - set game background back to black
