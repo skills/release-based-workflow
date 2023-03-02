@@ -75,13 +75,13 @@ Before using a release based workflow for a larger release, let's create a tag a
 To set the stage for later, let's also add a bug that we'll fix as part of the release workflow in later steps.  We've already created a `update-text-colors` branch for you so let's create and merge a pull request with this branch.
 
 1. Open a **new pull request** with `base: release-v1.0` and `compare: update-text-colors`.
-1. Set the pull request title to `Updated game text style`. You can include a detailed pull request body, an example is below:
+1. Set the pull request title to "Updated game text style". You can include a detailed pull request body, an example is below:
     ```
     ## Description:
     - Updated game text color to green
     ```
-1. Click `Create pull request`.
-1. We'll merge this pull request now. Click `Merge pull request` and delete your branch.
+1. Click **Create pull request**.
+1. We'll merge this pull request now. Click **Merge pull request** and delete your branch.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -123,7 +123,7 @@ body {
 ```
 1. Open a pull request with `release-v1.0` as the `base` branch, and your new branch as the `compare` branch.
 1. Fill in the pull request template to describe your changes.
-1. Click `Create pull request`.
+1. Click **Create pull request**.
 
 ### Merge the new feature to the release branch
 Even with releases, the GitHub flow is still an important strategy for working with your team. It's a good idea to use short-lived branches for quick feature additions and bug fixes.
@@ -165,7 +165,7 @@ Let's make a new pull request comparing the `release-v1.0` branch to the `main` 
     - Changed page background color to black.
     - Changed game text color to green.
     ```
-1. Click `Create pull request`.
+1. Click **Create pull request**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -273,7 +273,7 @@ We'll submit a hotfix by creating and merging the pull request.
     ## Description:
     - Fixed bug, set game background back to black
     ```
-1. Review the changes and click `Create pull request`.
+1. Review the changes and click **Create pull request**.
 1. We want to merge this into our hotfix branch now so click **Merge pull request**.
 
 Now we want these changes merged into `main` as well so let's create and merge a pull request with our hotfix to `main`.
@@ -285,7 +285,7 @@ Now we want these changes merged into `main` as well so let's create and merge a
     ## Description:
     - Fixed bug introduced in last production release - set game background back to black
     ```
-1. Review the changes and click `Create pull request`.
+1. Review the changes and click **Create pull request**.
 1. Click **Merge pull request**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
