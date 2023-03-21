@@ -7,6 +7,8 @@
 
 # Create a release based workflow
 
+_Create a release based workflow that is built on the foundations of the GitHub flow._
+
 <details id=0 open>
 <summary><h2>Welcome</h2></summary>
 
