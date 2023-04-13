@@ -332,7 +332,7 @@ With descriptive pull requests and auto generated release notes, you don't have 
 Here's a recap of all the tasks you've accomplished in your repository:
 
 - Create a beta release.
-- Add a new feature to the release branche.
+- Add a new feature to the release branch.
 - Open a release pull request
 - Automate release notes.
 - Merge and finalize the release branch.
