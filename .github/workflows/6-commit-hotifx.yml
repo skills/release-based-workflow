@@ -1,4 +1,4 @@
-name: Check step 6, Commit hotfix
+name: Step 6, Commit hotfix
 
 # This step triggers after 5-finalize-release.yml
 # This step sets STEP to 7

@@ -1,4 +1,4 @@
-name: Check step 2, Add feature to release branch
+name: Step 2, Add feature to release branch
 
 # This step triggers after 1-create-beta-release.yml
 # This step sets STEP to 3

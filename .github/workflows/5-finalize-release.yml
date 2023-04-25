@@ -1,4 +1,4 @@
-name: Check step 5, Commit hotfix
+name: Step 5, Commit hotfix
 
 # This step triggers after 4-release-notes-and-merge.yml
 # This step sets STEP to 6

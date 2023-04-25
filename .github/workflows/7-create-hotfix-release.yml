@@ -1,4 +1,4 @@
-name: Check step 7, Create release v1.0.1
+name: Step 7, Create release v1.0.1
 
 # This step triggers after 6-commit-hotifx.yml
 # This step sets STEP to x

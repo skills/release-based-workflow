@@ -1,4 +1,4 @@
-name: Check step 4, Generate release notes and merge
+name: Step 4, Generate release notes and merge
 
 # This step triggers after 3-release-pr-opened.yml
 # This step sets STEP to 5
