@@ -1,7 +1,7 @@
 
 <!--
-    The step and endstep markers will cause this 
-    introduction content to be hidden once the 
+    The step and endstep markers will cause this
+    introduction content to be hidden once the
     repository is created off the template
 -->
 
@@ -38,7 +38,10 @@ GitHub releases allow your team to package and provide software to your users ba
 [![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=skills&template_name=release-based-workflow&owner=%40me&name=skills-release-based-workflow&description=My+clone+repository&visibility=public)
 
 1. Right-click **Start course** and open the link in a new tab.
-2. In the new tab, follow the prompts to create a new repository. For owner, we recommend your personal account.
+2. In the new tab, most of the prompts will automatically fill in for you.
+   - For owner, choose your personal account or an organization to host the repository.
+   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+   - Scroll down and click the **Create repository** button at the bottom of the form.
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
 </details>
@@ -172,7 +175,7 @@ Let's make a new pull request comparing the `release-v1.0` branch to the `main` 
 1. Ensure the title of your pull request is "Release v1.0".
 1. Include a detailed pull request body, an example is below:
     ```
-    ## Description: 
+    ## Description:
     - Changed page background color to black.
     - Changed game text color to green.
     ```
