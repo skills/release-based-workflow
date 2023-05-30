@@ -1,9 +1,9 @@
 name: Step 4, Generate release notes and merge
 
-# This step triggers after 3-release-pr-opened.yml
+# This step triggers after 3-release-pr-opened.yml.
 # This workflow updates from step 4 to step 5.
 
-# This will run when a pull request to main is closed (merged)
+# This will run when a pull request to main is closed (merged).
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
@@ -37,10 +37,10 @@ jobs:
     needs: get_current_step
 
     # We will only run this action when:
-    # 1. This repository isn't the template repository
-    # 2. The step is currently 4
-    # 3. The pull request was closed through a merge
-    # 4. The pull request head branch is release-v1.0
+    # 1. This repository isn't the template repository.
+    # 2. The step is currently 4.
+    # 3. The pull request was closed through a merge.
+    # 4. The pull request head branch is release-v1.0.
     # Reference: https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference: https://docs.github.com/en/actions/learn-github-actions/expressions
     if: >-
@@ -49,11 +49,11 @@ jobs:
           && github.event.pull_request.merged == true
           && github.head_ref == 'release-v1.0' }}
 
-    # We'll run Ubuntu for performance instead of Mac or Windows
+    # We'll run Ubuntu for performance instead of Mac or Windows.
     runs-on: ubuntu-latest
 
     steps:
-      # We'll need to check out the repository so that we can edit the README
+      # We'll need to check out the repository so that we can edit the README.
       - name: Checkout
         uses: actions/checkout@v3
         with:
