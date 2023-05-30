@@ -20,9 +20,15 @@ GitHub releases allow your team to package and provide software to your users ba
 - **What you'll learn**: How to follow a release-based workflow.
 - **What you'll build**: You will create tags, releases, and release notes.
 - **Prerequisites**: If you need to learn about branches, commits, and pull requests, take [Introduction to GitHub](https://github.com/skills/introduction-to-github) first.
-- **How long**: This course is 7 steps long and takes less than 1 hour to complete.
+- **How long**: This course  takes less than 1 hour to complete.
 
-## How to start this course
+In this course, you will:
+
+1.
+2.
+3.
+
+### How to start this course
 
 <!-- For start course, run in JavaScript:
 'https://github.com/new?' + new URLSearchParams({
