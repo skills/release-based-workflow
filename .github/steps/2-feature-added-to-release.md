@@ -1,4 +1,5 @@
 <!--Step 2-->
+
 ## Step 2: Add a new feature to the release branch
 
 _Great job creating a beta release :heart:_
@@ -27,16 +28,19 @@ Releases are usually made of many smaller changes. Let's pretend we don't know a
 ### :keyboard: Activity: Update `base.css`
 
 1. Create a new branch off of the `main` branch and change the `body` CSS declaration in `base.css` to match what is below. This will set the page background to black.
+
 ```
 body {
     background-color: black;
 }
 ```
+
 1. Open a pull request with `release-v1.0` as the `base` branch, and your new branch as the `compare` branch.
 1. Fill in the pull request template to describe your changes.
 1. Click **Create pull request**.
 
 ### Merge the new feature to the release branch
+
 Even with releases, the GitHub flow is still an important strategy for working with your team. It's a good idea to use short-lived branches for quick feature additions and bug fixes.
 
 Merge this feature pull request so that you can open the release pull request as early as possible.

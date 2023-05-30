@@ -1,4 +1,5 @@
 <!--Step 5-->
+
 ## Step 5: Finalize the release
 
 _Awesome work on the release notes :+1:_
@@ -11,14 +12,14 @@ It's important to be aware of the information what will be visible in that relea
 
 ### Semantic versioning
 
-Semantic versioning is a formal convention for specifying compatibility. It uses a three-part version number: **major version**; **minor version**; and **patch**.  Version numbers convey meaning about the underlying code and what has been modified. For example, versioning could be handled as follows:
+Semantic versioning is a formal convention for specifying compatibility. It uses a three-part version number: **major version**; **minor version**; and **patch**. Version numbers convey meaning about the underlying code and what has been modified. For example, versioning could be handled as follows:
 
-| Code status  | Stage  | Rule  | Example version  |
-|---|---|---|---|
-| First release  | New product  | Start with 1.0.0  | 1.0.0  |
-| Backward compatible fix  | Patch release  | Increment the third digit  | 1.0.1  |
-| Backward compatible new feature  | Minor release  | Increment the middle digit and reset the last digit to zero  | 1.1.0  |
-| Breaking updates | Major release | Increment the first digit and reset the middle and last digits to zero | 2.0.0 |
+| Code status                     | Stage         | Rule                                                                   | Example version |
+| ------------------------------- | ------------- | ---------------------------------------------------------------------- | --------------- |
+| First release                   | New product   | Start with 1.0.0                                                       | 1.0.0           |
+| Backward compatible fix         | Patch release | Increment the third digit                                              | 1.0.1           |
+| Backward compatible new feature | Minor release | Increment the middle digit and reset the last digit to zero            | 1.1.0           |
+| Breaking updates                | Major release | Increment the first digit and reset the middle and last digits to zero | 2.0.0           |
 
 Check out this article on [Semantic versioning](https://semver.org/) to learn more.
 
@@ -29,7 +30,7 @@ Now let's change our recently automated release from _draft_ to _latest release_
 ### :keyboard: Activity: Finalize release
 
 1. In a separate tab, go to the **Releases** page for this repository.
-    - _Tip: To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link._
+   - _Tip: To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link._
 1. Click the **Edit** button next to your draft release.
 1. Ensure the _Target_ branch is set to `main`.
 1. Click **Publish release**.

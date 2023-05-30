@@ -1,4 +1,5 @@
 <!--Step 7-->
+
 ## Step 7: Create release v1.0.1
 
 _One last step to go!_
@@ -14,10 +15,10 @@ With descriptive pull requests and auto generated release notes, you don't have 
 ### :keyboard: Activity: Complete release
 
 1. In a separate tab, go to to the **Releases** page for this repository.
-    - _Tip: To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link._
+   - _Tip: To reach this page, click the **Code** tab at the top of your repository. Then, find the navigation bar below the repository description, and click the **Releases** heading link._
 1. Click the **Draft a new release** button.
 1. Set the _Target_ branch to `main`.
-    - _Tip: Practice your semantic version syntax. What should the tag and title for this release be?_
+   - _Tip: Practice your semantic version syntax. What should the tag and title for this release be?_
 1. To the top right of the description text box, click **Generate release notes**.
 1. Review the release notes in the text box and customize the content if desired.
 1. Click **Publish release**.

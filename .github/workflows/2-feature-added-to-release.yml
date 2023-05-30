@@ -8,10 +8,10 @@ name: Step 2, Add feature to release branch
 on:
   workflow_dispatch:
   push:
-    branches:    
+    branches:
       - release-v1.0
     paths:
-      - 'base.css'
+      - "base.css"
 
 permissions:
   contents: write
@@ -60,4 +60,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 2
           to_step: 3
-  

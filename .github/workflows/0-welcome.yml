@@ -50,7 +50,7 @@ jobs:
       # We'll need to check out the repository so that we can edit the README.
       - name: Checkout
         uses: actions/checkout@v3
-        with: 
+        with:
           fetch-depth: 0
 
       # Create a release-v1.0 branch.
