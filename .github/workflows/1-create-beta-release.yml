@@ -53,8 +53,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Update README to close <details id=1>
-      # and open <details id=2>
+      # Update README to from step 1 to step 2.
       - name: Update to step 2
         uses: skills/action-update-step@v2
         with:

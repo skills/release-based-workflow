@@ -60,8 +60,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Update README to close <details id=5>
-      # and open <details id=6>
+      # Update README from step 5 to step 6.
       - name: Update to step 6
         uses: skills/action-update-step@v2
         with:

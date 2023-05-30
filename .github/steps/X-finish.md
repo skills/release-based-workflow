@@ -1,5 +1,4 @@
-<details id=x>
-<summary><h2>Finish</h2></summary>
+## Finish
 
 <img src="https://octodex.github.com/images/snowtocat_final.jpg" alt=celebrate width=300 align=right>
 

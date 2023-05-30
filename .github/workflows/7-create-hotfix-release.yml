@@ -1,8 +1,7 @@
 name: Step 7, Create release v1.0.1
 
 # This step triggers after 6-commit-hotifx.yml
-# This step sets step to x
-# This step closes <details id=7> and opens <details id=x>
+# This workflow updates from step 7 to step X.
 
 # This will run when a release is published
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
@@ -54,8 +53,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Update README to close <details id=7>
-      # and open <details id=x>
+      # Update README from step 7 to step X.
       - name: Update to finish
         uses: skills/action-update-step@v2
         with:
