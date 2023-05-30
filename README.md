@@ -9,8 +9,7 @@
 
 _Create a release based workflow that is built on the foundations of the GitHub flow._
 
-<details id=0 open>
-<summary><h2>Welcome</h2></summary>
+## Welcome
 
 Create a release based workflow that is built on the foundations of the [GitHub flow](https://guides.github.com/introduction/flow/). When your team uses a release-based workflow, GitHub makes it easy to collaborate with deployable iterations of your project that you can package and make available for a wider audience to download and use.
 
@@ -20,7 +19,7 @@ GitHub releases allow your team to package and provide software to your users ba
 - **What you'll learn**: How to follow a release-based workflow.
 - **What you'll build**: You will create tags, releases, and release notes.
 - **Prerequisites**: If you need to learn about branches, commits, and pull requests, take [Introduction to GitHub](https://github.com/skills/introduction-to-github) first.
-- **How long**: This course  takes less than 1 hour to complete.
+- **How long**: This course takes less than 1 hour to complete.
 
 In this course, you will:
 
@@ -50,11 +49,10 @@ In this course, you will:
    - Scroll down and click the **Create repository** button at the bottom of the form.
 3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
-</details>
+
 
 <!--Step 1-->
-<details id=1>
-<summary><h2>Step 1: Create a beta release</h2></summary>
+## Step 1: Create a beta release
 
 _Welcome to "Release-based workflow" :sparkle:_
 
@@ -104,11 +102,10 @@ To set the stage for later, let's also add a bug that we'll fix as part of the r
 1. We'll merge this pull request now. Click **Merge pull request** and delete your branch.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+
 
 <!--Step 2-->
-<details id=2>
-<summary><h2>Step 2: Add a new feature to the release branch</h2></summary>
+## Step 2: Add a new feature to the release branch
 
 _Great job creating a beta release :heart:_
 
@@ -155,11 +152,10 @@ Merge this feature pull request so that you can open the release pull request as
 1. Click **Merge pull request**, and delete your branch.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+
 
 <!--Step 3-->
-<details id=3>
-<summary><h2>Step 3: Open a release pull request</h2></summary>
+## Step 3: Open a release pull request
 
 _Nice work adding a new feature :smile:_
 
@@ -188,11 +184,10 @@ Let's make a new pull request comparing the `release-v1.0` branch to the `main` 
 1. Click **Create pull request**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+
 
 <!--Step 4-->
-<details id=4>
-<summary><h2>Step 4: Generate release notes and merge</h2></summary>
+## Step 4: Generate release notes and merge
 
 _Thanks for opening that pull request :dancer:_
 
@@ -221,11 +216,10 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
 1. Click **Merge pull request**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+
 
 <!--Step 5-->
-<details id=5>
-<summary><h2>Step 5: Finalize the release</h2></summary>
+## Step 5: Finalize the release
 
 _Awesome work on the release notes :+1:_
 
@@ -261,11 +255,10 @@ Now let's change our recently automated release from _draft_ to _latest release_
 1. Click **Publish release**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+
 
 <!--Step 6-->
-<details id=6>
-<summary><h2>Step 6: Commit a hotfix to the release</h2></summary>
+## Step 6: Commit a hotfix to the release
 
 _Almost there :heart:_
 
@@ -310,11 +303,10 @@ Now we want these changes merged into `main` as well so let's create and merge a
 1. Click **Merge pull request**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+
 
 <!--Step 7-->
-<details id=7>
-<summary><h2>Step 7: Create release v1.0.1</h2></summary>
+## Step 7: Create release v1.0.1
 
 _One last step to go!_
 
@@ -338,7 +330,7 @@ With descriptive pull requests and auto generated release notes, you don't have 
 1. Click **Publish release**.
 1. Wait about 20 seconds then refresh this page for the next step.
 
-</details>
+
 
 <details id=x>
 <summary><h2>Finish</h2></summary>
@@ -364,7 +356,7 @@ Here's a recap of all the tasks you've accomplished in your repository:
 - [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
-</details>
+
 
 ---
 
