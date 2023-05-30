@@ -1,14 +1,15 @@
-name: Step 5, Commit hotfix
+name: Step 0, Welcome
 
-# This step triggers after 4-release-notes-and-merge.yml.
-# This workflow updates from step 1 to step 2.
+# This step triggers after the learner creates a new repository from the template.
+# This workflow updates from step 0 to step 1.
 
-# This will run when a release is published.
+# This will run every time we create push a commit to `main`.
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
@@ -29,20 +30,18 @@ jobs:
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
-  on_release_published:
-    name: On release v1.0 published
+  on_start:
+    name: On start
     needs: get_current_step
 
     # We will only run this action when:
     # 1. This repository isn't the template repository.
-    # 2. The step is currently 5.
-    # 3. The tag for the published release is v1.0.0.
+    # 2. The step is currently 0.
     # Reference: https://docs.github.com/en/actions/learn-github-actions/contexts
     # Reference: https://docs.github.com/en/actions/learn-github-actions/expressions
     if: >-
       ${{ !github.event.repository.is_template
-          && needs.get_current_step.outputs.current_step == 5
-          && github.ref_name == 'v1.0.0' }}
+          && needs.get_current_step.outputs.current_step == 0 }}
 
     # We'll run Ubuntu for performance instead of Mac or Windows.
     runs-on: ubuntu-latest
@@ -54,16 +53,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Create a release-v1.0.1 hotfix branch.
-      - name: Create hotfix branch
-        run: ./.github/script/create-hotfix-pr.sh
+      # Create a release-v1.0 branch.
+      - name: Initialize repository
+        run: ./.github/script/initialize-repository.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Update README from step 5 to step 6.
-      - name: Update to step 6
+      # Update README from step 0 to step 1.
+      - name: Update to step 1
         uses: skills/action-update-step@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          from_step: 5
-          to_step: 6
+          from_step: 0
+          to_step: 1
