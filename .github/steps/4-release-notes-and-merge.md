@@ -1,4 +1,8 @@
-<!--Step 4-->
+<!--
+  <<< Author notes: Step 4 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
+-->
 
 ## Step 4: Generate release notes and merge
 

@@ -1,4 +1,8 @@
-<!--Step 3-->
+<!--
+  <<< Author notes: Step 3 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
+-->
 
 ## Step 3: Open a release pull request
 

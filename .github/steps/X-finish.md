@@ -1,3 +1,8 @@
+<!--
+  <<< Author notes: Finish >>>
+  Review what we learned, ask for feedback, provide next steps.
+-->
+
 ## Finish
 
 <img src="https://octodex.github.com/images/snowtocat_final.jpg" alt=celebrate width=300 align=right>

@@ -1,4 +1,8 @@
-<!--Step 6-->
+<!--
+  <<< Author notes: Step 6 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
+-->
 
 ## Step 6: Commit a hotfix to the release
 

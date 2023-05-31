@@ -1,9 +1,12 @@
 <header>
 
 <!--
-    The step and endstep markers will cause this
-    introduction content to be hidden once the
-    repository is created off the template
+  <<< Author notes: Course header >>>
+  Read <https://skills.github.com/quickstart> for more information about how to build courses using this template.
+  Include a 1280×640 image, course name in sentence case, and a concise description in emphasis.
+  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
+  Next to "About", add description & tags; disable releases, packages, & environments.
+  Add your open source license, GitHub uses the MIT license.
 -->
 
 # Create a release based workflow
@@ -11,6 +14,12 @@
 _Create a release based workflow that is built on the foundations of the GitHub flow._
 
 </header>
+
+<!--
+  <<< Author notes: Course start >>>
+  Include start button, a note about Actions minutes,
+  and tell the learner why they should take the course.
+-->
 
 ## Welcome
 
@@ -58,10 +67,15 @@ In this course, you will:
 
 <footer>
 
+<!--
+  <<< Author notes: Footer >>>
+  Add a link to get support, GitHub status page, code of conduct, license link.
+-->
+
 ---
 
-Get help: [Post in our discussion board](https://github.com/skills/.github/discussions) • [Review the GitHub status page](https://www.githubstatus.com/)
+Get help: [Post in our discussion board](https://github.com/skills/.github/discussions) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
-© 2022 GitHub • [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) • [MIT License](https://gh.io/mit)
+&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
 </footer>
