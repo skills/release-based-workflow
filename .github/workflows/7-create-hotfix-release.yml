@@ -59,4 +59,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 7
-          to_step: x
+          to_step: X
