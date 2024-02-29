@@ -3,8 +3,8 @@
 # chmod a+x .github/script/initialize-repository.sh
 
 echo "Set committer details"
-git config user.name github-actions
-git config user.email github-actions@github.com
+git config user.name github-actions[bot]
+git config user.email github-actions[bot]@users.noreply.github.com
 
 echo "Create release branch"
 RELEASE_BRANCH=release-v1.0

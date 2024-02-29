@@ -3,8 +3,8 @@
 # chmod a+x .github/script/create-hotfix-pr.sh
 
 echo "Set committer details"
-git config user.name github-actions
-git config user.email github-actions@github.com
+git config user.name github-actions[bot]
+git config user.email github-actions[bot]@users.noreply.github.com
 
 echo "Create hotfix branch"
 RELEASE_BRANCH=hotfix-v1.0.1
