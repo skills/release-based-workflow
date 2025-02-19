@@ -10,7 +10,8 @@ _Awesome work on the release notes :+1:_
 
 ### Finalizing releases
 
-It's important to be aware of the information what will be visible in that release. In the pre-release, the version and commit messages are visible.
+It's important to be aware of the information that will be visible in the release. In the pre-release, the version and commit messages are visible. Sensitive files in your project like passwords, encryption keys, Personal Access Tokens (PAT's) or private user files are going to be published if you're not careful enough, leading to a potential misuse of the informatin and unauthorized access and malicious activities. <br>
+If you're interested in this subject the [GitHub Documentation to get started in Git](https://docs.github.com/en/get-started/getting-started-with-git) may be appealing to you. To know more about protecting personal information in your code you can be guided in [.gitignore files](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files). 
 
 ![image](https://user-images.githubusercontent.com/13326548/47883578-bdba7780-ddea-11e8-84b8-563e12f02ca6.png)
 
